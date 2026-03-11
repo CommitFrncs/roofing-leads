@@ -1,5 +1,5 @@
 // ========== GOOGLE SHEETS FORM HANDLING ==========
-const GOOGLE_SCRIPT_URL = '';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwRi1DlW565WM050cW8hkiGoWs2ntcOn7gVPEkzbuXUOCwwInKbqmm2MYAyokqY2QjY/exec';
 
 // ========== UTM PARAMETER CAPTURE ==========
 function captureUTMParams() {
