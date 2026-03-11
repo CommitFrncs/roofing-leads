@@ -1,0 +1,354 @@
+/* ===== MOBILE OPTIMIZATIONS ===== */
+/* Applies to screens 768px and below (phones and small tablets) */
+
+@media screen and (max-width: 768px) {
+    
+    /* ---------- GENERAL FIXES ---------- */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        max-width: 100% !important;
+    }
+    
+    /* ---------- NAVIGATION FIXES ---------- */
+    #navbar {
+        height: auto !important;
+        min-height: 70px;
+    }
+    
+    #navbar .flex.justify-between {
+        flex-wrap: wrap;
+    }
+    
+    #navbar .flex-shrink-0 {
+        max-width: 70%;
+    }
+    
+    #navbar .flex-shrink-0 .flex-col span:first-child {
+        font-size: 1.1rem !important;
+        white-space: nowrap;
+    }
+    
+    #navbar .flex-shrink-0 .flex-col span:last-child {
+        font-size: 0.7rem !important;
+    }
+    
+    /* ---------- HERO SECTION MOBILE ---------- */
+    section:first-of-type {
+        min-height: auto !important;
+        padding-top: 5rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    /* Hero heading */
+    section:first-of-type h1 {
+        font-size: 2.2rem !important;
+        line-height: 1.2 !important;
+    }
+    
+    /* Hero paragraph */
+    section:first-of-type p {
+        font-size: 1rem !important;
+    }
+    
+    /* CTA buttons stack vertically */
+    section:first-of-type .flex-col.sm\:flex-row {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+    
+    section:first-of-type .flex-col.sm\:flex-row a {
+        width: 100% !important;
+        text-align: center !important;
+        justify-content: center !important;
+        padding: 0.875rem !important;
+        font-size: 1rem !important;
+    }
+    
+    /* Trust badges */
+    section:first-of-type .flex.items-center.gap-6 {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 1rem !important;
+    }
+    
+    /* ---------- SERVICES SECTION MOBILE ---------- */
+    #services .grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    #services .group {
+        padding: 1.5rem !important;
+    }
+    
+    /* ---------- HOW IT WORKS SECTION MOBILE ---------- */
+    #how-it-works .grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    #how-it-works .group {
+        margin-top: 0 !important;
+        padding: 1.5rem !important;
+    }
+    
+    /* Remove the connecting line on mobile */
+    #how-it-works .hidden.md\:block {
+        display: none !important;
+    }
+    
+    /* ---------- TRUST SECTION MOBILE ---------- */
+    section.bg-brand-900 .grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    
+    section.bg-brand-900 .grid-cols-1.sm\:grid-cols-2 {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* ---------- FORM SECTION MOBILE ---------- */
+    #contact .md\:grid-cols-5 {
+        grid-template-columns: 1fr !important;
+    }
+    
+    #contact .p-8.md\:p-12 {
+        padding: 1.5rem !important;
+    }
+    
+    /* Form fields */
+    #leadForm .grid-cols-1.sm\:grid-cols-2 {
+        grid-template-columns: 1fr !important;
+        gap: 0.75rem !important;
+    }
+    
+    /* ---------- FOOTER MOBILE ---------- */
+    footer .grid.md\:grid-cols-4 {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    footer .md\:col-span-2 {
+        grid-column: auto !important;
+    }
+    
+    footer .border-t.pt-8 {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 1rem !important;
+    }
+    
+    /* ---------- SCROLL INDICATOR MOBILE ---------- */
+    .scroll-indicator {
+        bottom: 0.5rem !important;
+    }
+    
+    .scroll-indicator div {
+        padding: 0.5rem !important;
+    }
+    
+    .scroll-indicator i {
+        font-size: 1rem !important;
+    }
+}
+
+/* ===== EXTRA SMALL DEVICES (400px and below) ===== */
+@media screen and (max-width: 400px) {
+    
+    section:first-of-type h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    #navbar .flex-shrink-0 .flex-col span:first-child {
+        font-size: 0.9rem !important;
+    }
+    
+    #navbar .w-10.h-10 {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+}
+
+/* ===== SEO CONTENT BLOCK - MOBILE OPTIMIZATIONS ===== */
+@media screen and (max-width: 768px) {
+    .seo-content-block {
+        padding: 3rem 1rem !important;
+    }
+    
+    .seo-main-title {
+        font-size: 1.4rem !important;
+        line-height: 1.3 !important;
+        padding: 0 0.5rem;
+    }
+    
+    .seo-title-underline {
+        width: 60px !important;
+        height: 3px !important;
+    }
+    
+    /* Stack cards vertically */
+    .seo-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    /* Card adjustments */
+    .seo-card {
+        padding: 1.25rem !important;
+        border-radius: 18px !important;
+    }
+    
+    .seo-card-header {
+        margin-bottom: 1rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+    
+    .seo-card-icon {
+        font-size: 1.5rem !important;
+    }
+    
+    .seo-card-title {
+        font-size: 1.1rem !important;
+    }
+    
+    /* Areas mini cards */
+    .seo-mini-grid {
+        gap: 0.5rem !important;
+    }
+    
+    .seo-mini-card-item {
+        padding: 0.5rem 0.75rem !important;
+        font-size: 0.85rem !important;
+        border-radius: 10px !important;
+    }
+    
+    /* ===== FIXED SERVICES LIST - PROPER LIST STYLE ===== */
+    .seo-services-list {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .seo-service-item {
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 0.75rem !important;
+        padding: 0.85rem 0 !important;
+        background: transparent !important;
+        border: none !important;
+        border-bottom: 1px solid #f0f2f5 !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .seo-service-item:last-child {
+        border-bottom: none !important;
+    }
+    
+    .service-badge {
+        width: 10px !important;
+        height: 10px !important;
+        min-width: 10px !important;
+        margin-top: 0.4rem !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        box-shadow: 0 0 0 3px rgba(var(--badge-color), 0.1) !important;
+    }
+    
+    .service-content {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.25rem !important;
+        flex: 1 !important;
+    }
+    
+    .service-title {
+        font-weight: 600 !important;
+        color: #1e293b !important;
+        font-size: 0.95rem !important;
+        min-width: auto !important;
+        margin: 0 !important;
+        line-height: 1.4 !important;
+    }
+    
+    .service-desc {
+        color: #64748b !important;
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    
+    /* FAQ card */
+    .seo-faq-card {
+        padding: 1.25rem !important;
+        border-radius: 16px !important;
+        margin-top: 1.5rem !important;
+    }
+    
+    .seo-faq-content {
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 0.75rem !important;
+        flex-direction: row !important;
+    }
+    
+    .seo-faq-icon {
+        width: 36px !important;
+        height: 36px !important;
+        min-width: 36px !important;
+        font-size: 1.2rem !important;
+        margin-top: 0 !important;
+    }
+    
+    .seo-faq-text {
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+    .seo-mini-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.4rem !important;
+    }
+    
+    .seo-service-item {
+        padding: 0.75rem 0 !important;
+        gap: 0.6rem !important;
+    }
+    
+    .service-badge {
+        width: 8px !important;
+        height: 8px !important;
+        min-width: 8px !important;
+        margin-top: 0.35rem !important;
+    }
+    
+    .service-title {
+        font-size: 0.9rem !important;
+    }
+    
+    .service-desc {
+        font-size: 0.8rem !important;
+    }
+    
+    .seo-faq-content {
+        gap: 0.6rem !important;
+    }
+    
+    .seo-faq-icon {
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        font-size: 1rem !important;
+    }
+}
